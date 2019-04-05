@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Filter Method</title>
+        <script type = "text/javascript"  src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <script type = "text/javascript" language = "javascript">
+    $(document).ready(function()
+    {
+       $("li").filter(".c2").addClass("selected");
+    });
+    </script>
+    <style>
+    .selected {color: blue;}
+    </style>
+    </head>
+    <body>
+        <div>
+            <ul>
+                <li class="c1"> MBA</li>
+                <li class="c1"> MCA</li>
+                <li class="c2"> BE</li>
+                <li class="c3"> LAW</li>
+                <li class="c2"> CA</li>
+            </ul>
+        </div>
+    </body>
+</html>

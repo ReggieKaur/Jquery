@@ -1,18 +1,23 @@
 <html>
     <head>
+        <title> The Example</title>
         <script type = "text/javascript"  src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     
-    <script type = "text/javascript">
+    <script type = "text/javascript" language = "javascript">
     $(document).ready(function()
     {
-        $("button").click(function()
-        {
-            $(this).hide();
-        });
+       var para = $("p");
+       for(i=0; i<para.length; i++){
+           alert("Paragraph No: " +para[i].innerHTML);
+       }
     });
     </script>
     </head>
     <body>
-        <button> Let me hide </button>
+        <div>
+            <p class="myclass"> First Para. </p>
+            <p id = "myid"> Second Para</p>
+            <p> Third Para. </p>
+        </div>
     </body>
 </html>
